@@ -1,0 +1,216 @@
+:root {
+  --primary--color: #ee4d2d;
+  /* --primary--color-rgba: rgba(238,75,43); */
+  --text-color: rgb(41, 40, 40);
+  --white-color: #fff;
+  --black-color: #000;
+  --grey--color: #ccc;
+  --header-height: 150px;
+  --header__navbar-height: 60px;
+  --start_gold-color: #ffce3d;
+  --header_sort-bar-hieght: 46px;
+  --header-with-search: calc(
+    var(--header-height) - var(--header__navbar-height)
+  );
+}
+* {
+  box-sizing: inherit;
+}
+/* 100% = 16px */
+/* 62,5 % = 1.6 rem */
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  /* chung sans-serif khong co chan */
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.btn.btn--normal:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* screen = 1200px -> then width = screen
+screen < 1200px -> width = 100% size screen */
+
+/* reponsive */
+/* .grid {
+ 
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.grid__full-width {
+  width: 100%;
+} */
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: 5px;
+}
+/* test */
+.grid__column-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.6667%;
+}
+
+.grid__column-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3333%;
+}
+
+.grid__column-2-4{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+/* qr xuat hien tu tu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* modal css register */
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  animation: fadeIn linear 0.1s;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* z_index cao nhat thi duoc nam cao nhat */
+.modal__body {
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  animation: growth linear 0.1s;
+  --growth-from: 0.7;
+  --growth-to: 1;
+}
+
+/* growth modal */
+@keyframes growth {
+  from {
+    /* scale: do lon len */
+    transform: scale(var(--growth-from));
+    opacity: 0;
+  }
+  to {
+    transform: scale(var(--growth-to));
+    opacity: 1;
+  }
+}
+
+/* selection*/
+.select-input {
+  position: relative;
+  border-radius: 2px;
+  height: 36px;
+  padding: 0 12px;
+  background-color: var(--white-color);
+  min-width: 200px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.select-input:hover .select-input-option{
+    display: block;
+}
+
+.select-input__lable {
+  font-size: 1.4rem;
+}
+
+/* select input */
+.select-input-option{
+    box-shadow: 0 1px 2px #ccc;
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: calc(100% - 10px);
+    border-radius: 2px;
+    background-color: var(--white-color);
+    animation: fadeIn ease-in 0.2s;
+    padding: 8px 8px 14px 14px;
+    display: none;
+  }
+
+.select-input-option__link{
+    text-decoration: none;
+    color: var(--black-color);
+    display: block;
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+
+.select-input-option__link:hover{
+    color: var(--primary--color);
+}
+
+.select-input-option::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: -16px;
+    display: block;
+}
+/* Pagination */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  list-style: none;
+}
+
+.pagination-item{
+  margin: 0 8px;
+}
+
+.pagination-item__link{
+  --height : 30px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #939393;
+  margin: 0px 19px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  min-width: 40px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 2px;
+  /* the a se k dat dc chieu ngang khi the a k co display:block */
+}
+
+.pagination-item--active .pagination-item__link:hover{
+  /* filter: brightness(0.1); or */
+  background-color: #ed5c3f;
+}
+
+.pagination-item--active .pagination-item__link{
+  background-color: var(--primary--color);
+  color:var(--white-color);
+}
+

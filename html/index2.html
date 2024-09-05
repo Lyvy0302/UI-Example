@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Responsive</title>
+    <style>
+        h2{
+            text-align: center;
+            font-size: 68px;
+        }
+        .pc,
+        .tablet,
+        .mobile{
+            font-size: 68px;
+            display: none;
+        }
+      /* RESPONSIVE MEDIA QUERIES */
+      /* width mx 800 px css run */
+      /* @media (max-width: 800px) {
+        .pc,
+        .tablet,
+        .mobile{
+            color: red;
+        }
+      } */
+      
+      @media (min-width: 64em){
+        .pc{
+            color : red;
+            display: block;
+        }
+      }
+
+      /* Break Point : diem chuyen tu pc->tablet va tu tablet->mobile */
+      @media (max-width:  64em) and (min-width: 46.25em){
+        .tablet{
+            color : green;
+            display: block;
+        }
+      }
+      @media (max-width: 46.25em) and (min-width: 0em){
+        .mobile{
+              color: blue;
+              display: block;
+        }
+      }
+      /* Kich Thuoc Phu Hop Voi Website
+      1. PC : >=1024px
+      2. Tablet : >= 740px <= 1024px
+      3. Mobile : <= 740px >=0      
+      */
+    </style>
+  </head>
+  <body>
+      <h2>MEDIA QUERIES</h2>
+      <h2 class="pc">pc</h2>
+      <h2 class="tablet">tablet</h2>
+      <h2 class="mobile">mobile</h2>
+  </body>
+</html>

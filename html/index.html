@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Example</title>
+</head>
+<body>
+    <!-- Atribute -->
+                        <!-- <h1 title="Atribute">Atribute?</h1> -->
+    <!-- 3 trip css 1- internal (in tag style) -2 extanal (create 1 css file) 2- inline (in line)) -->
+    <!-- id: identify (unique) - class: same item -->
+    <!-- priority
+        1. internal,external same
+        2. inline 1000
+        3. #id 100
+        4 class 10
+        5 tag 1
+        6 qual specificity call selector loop => new item priority 
+        7 universal selector and inherited , * {} tag and html {} tag
+        8. !important priority
+    -->
+    <!-- Variable: eazy for change css atribute using everywhere -->
+                        <!-- <h1 class="variable">Variable</h1> -->
+    <!-- css px independent , % dependent item, rem dependent tag html, rem = tag near it  -->
+    <!--padding 2 value top,bottom and right,left 
+        padding 3 value top and right,left, bottom
+        padding 4 value chieu kim dong ho
+    -->
+    
+                        <!-- <div class="box box1">Box 1</div>
+                        <div class="box box2">Box 2</div>
+                        <div class="box box3">Box 3</div> -->
+    <!-- border and padding increase the total size of Element
+         border solid default 2px 
+    -->
+    <!--box-sizing: equal size define element however th border large thi box-sizing khong co gia tri
+    and element thêm bị đẩy ra  -->
+                        <!-- <div class="boxa">
+                            Đây là nội dung bài viết
+                        </div> -->
+    <!-- background-clip qui dinh dien tich do mau nen : back-ground-clip -->
+                 <!-- <div class="header"></div> -->
+    <!-- background: 100px ngang-doc auto
+        add image thi cach nhau boi dau , or addfuntion linar-gradient: dai mau chuyen css
+        vd  (180deg, mau sac 1, mau sac 2) and ket hop voiimage
+        repeat :tao duoc nhung buc anh co tinh chat lap lai
+    -->
+    <!-- backgrond-size-keyword : contain; => lay kich thuoc dai
+        cover : lay chieu dai hon 100% khong ho khoang trang
+    -->
+    <!-- background-origin su dung cho background-image tuong tu background-clip cho mau ne -->
+    <!-- backfround-position: vi tri image -->
+    <!-- background-shordhand : viet all  thuoc tinh bg trong 1 -->
+    <!-- background-atatachment:  scroll image -->
+
+                <!-- <div class="header1">
+
+                    <a href="https://developer.com">CSS for zero to hero</a>
+                </div> -->
+    <!-- CSS PREUDO_CLASSES
+    1. :root tham chieu den phan tu goc --html
+    2. :hover re chuot vao
+    3. :active bam va giu chuot doi tinh nang
+    4. .first-child : phan tu con dau tien
+    5. .last-child : phan tu con cuoi cung
+    -->
+                                <!-- <div class="box2">
+                                    <ul>
+                                        <li>A</li>
+                                        <li>B</li>
+                                        <li>C</li>
+                                        <li>D</li>
+                                        <li>E</li>
+                                    </ul>
+                                </div> -->
+    <!-- CSS pseudo-elements (element gia)-> k can viet ma css
+    1. ::before
+    2. ::after
+    3. ::first-letter
+    4. ::first-line
+    5. ::selection
+    -->
+                            <!-- <div class="box4">
+                                <h1>CSS Pseudo-elements<br/>Css Line 2</h1>
+                                <ul>
+                                    <li>::before</li>
+                                    <li>::after</li>
+                                    <li>::first-letter</li>
+                                    <li>::first-line</li>
+                                    <li>::selection</li>
+                                </ul>
+                            </div> -->
+
+                            <!-- <div class="box5">
+                                <h1>CSS Pseudo-elements<br/>Css Line 2</h1>
+                                <ul>
+                                    <li>::before</li>
+                                    <li>::after</li>
+                                    <li>::first-letter</li>
+                                    <li>::first-line</li>
+                                    <li>::selection</li>
+                                </ul>
+                            </div> -->
+    
+    <!--  Position
+    1. Relative : tuong doi(khong phu thuoc vao ai ca)
+    2. Absolute : tuyet doi(phu thuoc vao the cha gan nhat co thuoc tinh position)
+    3. Fixed : phu thuoc khung trinh duyet(cua so trinh duyet)
+    4. Sticky : bam dinh phu thuoc khung trinh duyet (re chuot di theo cho den khi bam len top thi dung lai)
+    -->
+                            <!-- <div class="box6">
+                                <div class="box-child"></div>
+                            </div>
+                            <h1>Position</h1>                      
+                            <ul>
+                                <li>Relative</li>
+                                <li>Absolute</li>
+                                <li>Fixed</li>
+                                <li>Sticky</li>
+                            </ul> -->
+
+                            <!-- <div class="header2">
+                            </div>
+                            <h1 style="margin-top: 40px;">Position</h1>
+                            <ul>
+                                <li>Fixed1</li>
+                                <li>Fixed2</li>
+                            </ul> -->
+
+    <!-- Thuc hanh
+    1. Phan tich
+        1.header
+        2.slider
+        3.Content
+            1.About
+            2.Tour
+            3.contact
+            4.image
+            5.footer
+    2. Dung base (xay mong)
+    3. xay dung tung phan theo phan tich
+    4. Hoan thien
+    -->
+    <!-- 1. Header (Đầu trang)
+        2. Navigation (Điều hướng)
+        3. Breadcrumbs (Vị trí hiện tại, đường dẫn, minh dang dung dau trong bai hoc nao)
+        4. Sidebar (Thanh lề)
+        5. Slider (Ảnh cuộn)
+        6. Content (Nội dung)
+        7. Footer (Cuối trang) 
+        Banner : Anh quang cao
+    -->
+    <div class="chart-layout">
+        <div class="chart-layout_item" style="--percent : 10%">10%</div>
+        <div class="chart-layout_item" style="--percent : 20%">20%</div>
+        <div class="chart-layout_item" style="--percent : 30%">30%</div>
+        <div class="chart-layout_item" style="--percent : 40%">40%</div>
+        <div class="chart-layout_item" style="--percent : 50%">50%</div>
+        <div class="chart-layout_item" style="--percent : 60%">60%</div>
+        <div class="chart-layout_item" style="--percent : 70%">70%</div>
+        <div class="chart-layout_item" style="--percent : 80%">80%</div>
+        <div class="chart-layout_item" style="--percent : 90%">90%</div>
+        <div class="chart-layout_item" style="--percent : 14%">14%</div>
+        <div class="chart-layout_item" style="--percent : 18%">18%</div>
+        <div class="chart-layout_item" style="--percent : 10%">10%</div>
+    </div>
+</body>
+</html>
